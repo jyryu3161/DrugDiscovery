@@ -52,14 +52,6 @@ conda --version
 python --version
 ```
 
-#### ▶️ Windows Quick Installation
-
-Windows users should follow these steps:
-
-1. Download the Windows installer from the [official Anaconda website](https://www.anaconda.com/products/distribution).
-2. Run the downloaded installer (.exe) and follow the default installation instructions.
-3. Open Anaconda Prompt and verify the installation.
-
 ---
 
 ### 4. Essential Anaconda Commands
