@@ -93,7 +93,7 @@ young_passengers = df[df['Age'] < 20]
 print(young_passengers.head())
 ```
 
-### Multiple conditions (AND, OR)
+### Multiple conditions
 ```python
 # Passengers older than 60 OR fare greater than $100 (OR condition)
 special_passengers = df[(df['Age'] >= 60) | (df['Fare'] >= 100)]
