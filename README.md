@@ -1,1 +1,1 @@
-# DrugDiscovery
+# Drug Discovery and Practice
