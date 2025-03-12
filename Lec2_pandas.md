@@ -95,10 +95,6 @@ print(young_passengers.head())
 
 ### Multiple conditions (AND, OR)
 ```python
-# Females in first class (AND condition)
-female_first_class = df[(df['Sex'] == 'female') & (df['Pclass'] == 1)]
-print(female_first_class.head())
-
 # Passengers older than 60 OR fare greater than $100 (OR condition)
 special_passengers = df[(df['Age'] >= 60) | (df['Fare'] >= 100)]
 print(special_passengers.head())
@@ -137,16 +133,11 @@ print(df.isnull().sum())
 mean_age = df['Age'].mean()
 df['Age'].fillna(mean_age, inplace=True)
 
-# Fill missing "Embarked" values with mode (most common value)
-most_embarked = df['Embarked'].mode()[0]
-df['Embarked'].fillna(most_embarked, inplace=True)
-
-print(df.isnull().sum())
 ```
 
 ---
 
-## 🔥 **IMPORTANT!** ✅ **Step 8: Groupby Analysis**
+## ✅ **Step 8: Groupby Analysis**
 
 `groupby` allows grouping data based on one or more categories to perform statistical analysis.
 
@@ -161,49 +152,20 @@ sex_survival_rate = df.groupby('Sex')['Survived'].mean()
 print(sex_survival_rate)
 ```
 
-### Result:
-```
-Sex
-female    0.742038
-male      0.188908
-```
-
-- Female passengers had a higher survival rate.
-
 ### **Example 2: Average Fare by Passenger Class**
 ```python
 class_fare = df.groupby('Pclass')['Fare'].mean()
 print(class_fare)
 ```
 
-### Result:
-```
-Pclass
-1    84.154687
-2    20.662183
-3    13.675550
-```
-
-- First-class passengers paid significantly higher fares.
-
 ### **Example 3: Survival Rate by Class and Gender (Multi-level Groupby)**
 ```python
 class_sex_survival = df.groupby(['Pclass', 'Sex'])['Survived'].mean()
 print(class_sex_survival)
+for each_class, each_df in df.groupby('Pclass'):
+    print(each_class)
+    print(each_df)
 ```
-
-### Result:
-```
-Pclass  Sex   
-1       female    0.968085
-        male      0.368852
-2       female    0.921053
-        male      0.157407
-3       female    0.500000
-        male      0.135447
-```
-
-- Female passengers consistently showed higher survival rates across all classes.
 
 ---
 
@@ -219,15 +181,3 @@ print(result_df)
 ```python
 result_df.to_csv('titanic_groupby_result.csv', index=False)
 ```
-
----
-
-## 📌 **Advanced pandas Functions (Further Study):**
-- `merge()`: Combining data from multiple DataFrames (similar to SQL JOIN).
-- `pivot_table()`: Creating pivot tables similar to Excel.
-- `apply()`: Applying custom functions row-wise or column-wise.
-- Visualization: Integrating pandas with matplotlib or seaborn (`df.plot()`).
-
----
-
-**Following these structured steps will solidify your foundational understanding of pandas and essential data analysis techniques.**
