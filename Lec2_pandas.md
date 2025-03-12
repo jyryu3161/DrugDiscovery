@@ -2,7 +2,7 @@ Here's the comprehensive pandas review notes translated clearly and neatly into 
 
 ---
 
-# 🐼 **Pandas Core Syntax & Examples (Lecture Review)**
+# 🐼 **Pandas Core Syntax & Examples**
 
 ## ✅ **Step 1: Importing pandas Library**
 
