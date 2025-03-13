@@ -30,7 +30,7 @@ Run the following script in the terminal or save it as a `.sh` file and execute 
 #!/bin/bash
 
 # Download latest Anaconda installation script
-wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh -O anaconda.sh
+wget wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh -O anaconda.sh
 
 # Run installation script
 bash anaconda.sh -b -p $HOME/anaconda3
