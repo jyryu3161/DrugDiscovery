@@ -158,7 +158,7 @@ conda update --all
 2. Install biopython package using conda.
 3. Export the created environment into a YAML file.
 
-**Note:** A YAML file is a human-readable text format used for data serialization, commonly used for configuring software applications and environments. YAML files typically have the `.yml` or `.yaml` extension.
+- Note: A YAML file is a human-readable text format used for data serialization, commonly used for configuring software applications and environments. YAML files typically have the `.yml` or `.yaml` extension.
 ---
 
 Utilize this guide to efficiently install and make the most of Anaconda.
