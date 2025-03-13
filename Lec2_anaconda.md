@@ -20,37 +20,84 @@ Benefits of installing Anaconda include:
 
 ---
 
-### 3. How to Install Anaconda (with Script Examples)
+### 3. How to Install Anaconda (Manual Installation Guide, Ubuntu example)
 
-#### ▶️ Linux Installation (Ubuntu example)
+Execute the following commands **one by one** in your terminal to install Anaconda.
 
-Run the following script in the terminal or save it as a `.sh` file and execute to automatically install Anaconda:
+#### Step 1. Download Anaconda Installation Script
 
 ```bash
-#!/bin/bash
-
-# Download latest Anaconda installation script
-wget wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh -O anaconda.sh
-
-# Run installation script
-bash anaconda.sh -b -p $HOME/anaconda3
-
-# Initialize environment variables
-eval "$(~/anaconda3/bin/conda shell.bash hook)"
-conda init
-
-# Remove installation file
-rm anaconda.sh
-
-echo "Anaconda installation completed. Restart your terminal or run 'source ~/.bashrc' to apply settings."
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh -O anaconda.sh
 ```
 
-Verify the installation with these commands:
+#### Step 2. Run Installation Script
+
+Start the Anaconda installation with the following command:
+
+```bash
+bash anaconda.sh
+```
+
+When prompted with license terms:
+
+- **Press the arrow-down (↓) key** to scroll down to the end of the license agreement.
+- After reaching the end, you'll see the prompt:
+
+```bash
+Do you accept the license terms? [yes|no]
+```
+
+- Type `yes` and press Enter.
+
+Next, you'll see the default installation path:
+
+```bash
+Anaconda3 will now be installed into this location:
+/home/username/anaconda3
+
+- Press ENTER to confirm the location
+- Press CTRL-C to abort the installation
+- Or specify a different location below
+```
+
+- Press Enter to use the default installation location, or type a different path if preferred.
+
+Wait until the installation is complete.
+
+#### Step 3. Initialize Environment Variables
+
+After installation, execute the following commands to activate Anaconda immediately:
+
+```bash
+eval "$(~/anaconda3/bin/conda shell.bash hook)"
+conda init
+```
+
+Running `conda init` automatically configures your shell to use conda commands on future terminal sessions.
+
+#### Step 4. Delete Installation Script
+
+After installation is completed, remove the downloaded installation script:
+
+```bash
+rm anaconda.sh
+```
+
+#### Step 5. Apply Settings and Finish Installation
+
+To finalize installation, restart your terminal or run the following command to reload environment variables:
+
+```bash
+source ~/.bashrc
+```
+
+Verify successful installation by checking the Anaconda version:
 
 ```bash
 conda --version
-python --version
 ```
+
+If the Anaconda version number is displayed, your installation was successful.
 
 ---
 
