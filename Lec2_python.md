@@ -164,7 +164,7 @@ p.introduce()
 
 - Biopython installation
 ```bash
-pip install biopython
+!pip install biopython
 ```
 
 - PubMed data retrieval example
