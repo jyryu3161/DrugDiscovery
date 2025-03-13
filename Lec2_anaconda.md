@@ -121,6 +121,16 @@ conda remove -n env_name --all
 
 # List all environments
 conda env list
+
+# Export environment to YAML file
+conda activate env_name
+conda env export > environment.yml
+
+# Create new environment from exported YAML file
+conda env create -f environment.yml
+
+# (Optional) Create environment from YAML with a new name
+conda env create -n new_env_name -f environment.yml
 ```
 
 #### Package Installation and Management Commands
