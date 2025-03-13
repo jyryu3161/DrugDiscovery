@@ -181,7 +181,3 @@ abstracts = handle.read()
 print(abstracts)
 ```
 
-## Conclusion
-- Practice solving these problems independently.
-- Enhance programming skills through hands-on problem-solving.
-
