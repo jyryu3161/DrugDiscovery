@@ -40,7 +40,7 @@ bash anaconda.sh
 
 When prompted with license terms:
 
-- **Press the Enter key** for license agreement.
+- **Press the ENTER** for license agreement.
 - **Press the arrow-down (↓) key** to scroll down to the end of the license agreement.
 - After reaching the end, you'll see the prompt:
 
