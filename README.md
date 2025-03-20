@@ -9,3 +9,6 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 - [Python Review](Lec2_python.md)
 - [Data Handling with Pandas](Lec2_pandas.md)
 
+### Week 3 Lecture Materials
+- [RDKit Practice](Lec3.ipynb)
+
