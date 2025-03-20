@@ -10,5 +10,5 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 - [Data Handling with Pandas](Lec2_pandas.md)
 
 ### Week 3 Lecture Materials
-- [RDKit Practice](Lec3.ipynb)
+- [RDKit Practice](Lec3_code.ipynb)
 
