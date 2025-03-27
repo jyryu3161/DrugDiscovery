@@ -68,6 +68,8 @@ print(df[['Name', 'Age', 'Survived']].head())
 ```python
 # Select first row
 print(df.iloc[0])
+print('------------------')
+print(df.iloc[0]['Name'])
 
 # Select first 5 rows
 print(df.head())
