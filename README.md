@@ -15,3 +15,7 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 - [Data Handling with Pandas](Lec2_pandas.md)
 - [Pandas Colab](lec4_pandas.ipynb)
 - [Kinase Drug Target Discovery Practice](lec4_code.ipynb)
+
+### Week 5 Lecture Materials
+- [Cancer Drug Target Discovery Practice](Lec5_code.ipynb)
+
