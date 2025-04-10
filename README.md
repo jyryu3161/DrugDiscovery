@@ -17,5 +17,5 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 - [Kinase Drug Target Discovery Practice](lec4_code.ipynb)
 
 ### Week 5 Lecture Materials
-- [Cancer Drug Target Discovery Practice](Lec5_code.ipynb)
+- [Cancer Drug Target Discovery Practice](lec5_code.ipynb)
 
