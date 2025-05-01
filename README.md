@@ -22,3 +22,5 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 ### Week 6 Lecture Materials
 - [Cancer Drug Target Discovery Practice and Validation](lec6_code.ipynb)
 
+### Week 7 Lecture Materials
+- [Ligand-Based Drug Discovery Practice](Lec7_code.ipynb)
