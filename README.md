@@ -24,3 +24,6 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 
 ### Week 7 Lecture Materials
 - [Ligand-Based Drug Discovery Practice](Lec7_code.ipynb)
+
+### Week 8 Lecture Materials
+- [Virtual Screening Practice-1](Lec8_code.ipynb)
