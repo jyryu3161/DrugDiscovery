@@ -1,0 +1,59 @@
+# Load structures
+select protein, protein
+select ligand, ref_docking_output
+
+# Basic visualization
+hide everything
+show cartoon, protein
+show sticks, ligand
+
+# Colors
+set_color custom_protein, [0.7, 0.8, 1.0]  # Light blue
+set_color custom_ligand, magenta [1.0, 0.8, 0.8]   # Salmon
+set_color custom_binding, [0.9, 1.0, 0.9]   # Pale green
+color custom_protein, protein
+color custom_ligand, ligand
+
+# Binding site
+select binding_site, protein within 5 of ligand
+show sticks, binding_site
+color custom_binding, binding_site
+set stick_radius, 0.3, ligand
+set stick_radius, 0.25, binding_site
+
+# Hydrogen bonds
+distance hbonds, ligand, protein, 3.5, mode=2
+set dash_radius, 0.15
+set dash_gap, 0.2
+color yellow, hbonds
+
+# Surface  Surface
+show surface, binding_site
+color white, binding_site and surface
+set transparency, 0.3
+set surface_quality, 1
+
+# Labeling
+label ligand and name C1, "Ligand %s" % resn
+label binding_site and name CA, "%s%s" % (resn, resi)
+set label_font_id, 7
+set label_size, 14
+set label_color, black
+set label_outline_color, white
+
+# View
+orient binding_site
+zoom ligand, 10
+
+# Advanced visualization
+set ray_shadows, off
+set antialias, 2
+set cartoon_fancy_helices, 1
+set cartoon_smooth_loops, 1
+set ambient_occlusion, 1
+set ray_trace_mode, 1
+set ray_opaque_background, 0
+
+# Save
+png protein_ligand_interaction.png, width=2000, height=1600, dpi=600, ray=1
+save protein_ligand_interaction.pse
