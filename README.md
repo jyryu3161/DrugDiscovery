@@ -26,4 +26,8 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 - [Ligand-Based Drug Discovery Practice](Lec7_code.ipynb)
 
 ### Week 8 Lecture Materials
-- [Virtual Screening Practice-1](Lec8_code.ipynb)
+- [Virtual Screening Practice-1, LBDD](Lec8_code.ipynb)
+
+### Week 9 Lecture Materials
+- [Virtual Screening Practice-2, SBDD ](lec9_code.ipynb)
+- [PyMOL script for docking pose visualization](pymol_script.txt)
