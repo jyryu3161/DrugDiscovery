@@ -9,7 +9,7 @@ show sticks, ligand
 
 # Colors
 set_color custom_protein, [0.7, 0.8, 1.0]  # Light blue
-set_color custom_ligand, magenta [1.0, 0.8, 0.8]   # Salmon
+set_color custom_ligand, [1.0, 0.8, 0.8] # Salmon
 set_color custom_binding, [0.9, 1.0, 0.9]   # Pale green
 color custom_protein, protein
 color custom_ligand, ligand
