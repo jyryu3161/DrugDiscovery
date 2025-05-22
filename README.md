@@ -30,4 +30,9 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 
 ### Week 9 Lecture Materials
 - [Virtual Screening Practice-2, SBDD ](Lec9_code.ipynb)
+
+### Week 10 Lecture Materials
+- [Machine Learning Based Drug Discovery](Lec10_code.ipynb)
+
+### Week 11 Lecture Materials
 - [PyMOL script for docking pose visualization](pymol_script.txt)
