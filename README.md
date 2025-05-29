@@ -35,4 +35,6 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 - [Machine Learning Based Drug Discovery](Lec10_code.ipynb)
 
 ### Week 11 Lecture Materials
-- [PyMOL script for docking pose visualization](pymol_script.txt)
+- [Active Learning](Lec11_code_active_learning.ipynb)
+- [Virtual Screening Hit Selection from Docking Results](Lec11_code.ipynb)
+- [PyMOL Script for Ddocking Pose Visualization](pymol_script.txt)
