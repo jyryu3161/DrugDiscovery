@@ -37,4 +37,4 @@ This repository contains lecture materials for the **Drug Discovery and Practice
 ### Week 11 Lecture Materials
 - [Active Learning](Lec11_code_active_learning.ipynb)
 - [Virtual Screening Hit Selection from Docking Results](Lec11_code.ipynb)
-- [PyMOL Script for Ddocking Pose Visualization](pymol_script.txt)
+- [PyMOL Script for Docking Pose Visualization](pymol_script.txt)
